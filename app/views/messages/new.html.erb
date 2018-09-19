@@ -1,0 +1,18 @@
+<%= simple_form_for(@message) do |f| %>
+          <%= f.input :name,
+                      required: true,
+                      placeholder: 'Your name',
+                      label: false,
+                      autofocus: true %>
+          <%= f.input :email,
+                      required: true,
+                      placeholder: 'Your email',
+                      label: false,
+                      autofocus: true %>
+          <%= f.input :body,
+                      as: :text, input_html: {rows: 3},
+                      required: true,
+                      placeholder: 'Your message',
+                      label: false,
+                      autofocus: true %>
+          <%= f.submit 'Send' %>
