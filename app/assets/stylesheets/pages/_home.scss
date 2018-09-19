@@ -135,6 +135,10 @@ body::-webkit-scrollbar-thumb {
   // ::-webkit-input-placeholder {
   //   text-transform: underline;
   // }
+  input:-webkit-autofill {
+    background-color: none !important;
+    color: #ccc;
+  }
 }
 
 .submit-button {
