@@ -1,3 +1,36 @@
 .hero-image {
+  background: image-url('pokhara.jpeg');
   color: white;
+  height: 100vh;
+  background-position: center;
+  /* if you have a 70px navbar => height: calc(100vh - 70px); */
+  background-size: cover !important;
+  overflow: hidden;
+}
+
+.header-large {
+  min-width: 350px;
+  max-width: 650px;
+  h1 {
+    font-size: 104px;
+    text-align: center;
+  }
+  p {
+    text-align: center;
+  }
+}
+
+.header-small {
+  margin-left: 40px;
+  width: 300px;
+  .small-title-top {
+    font-size: 80px;
+    margin-bottom: 0;
+    // text-align: center;
+  }
+  .small-title-bottom {
+    margin-top: 0;
+    font-size: 80px;
+    // text-align: center;
+  }
 }

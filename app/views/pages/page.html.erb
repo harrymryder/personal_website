@@ -1,1 +1,14 @@
-<%= image_tag "pokhara", crop: :fill, style: 'height: 100vh; background-size: cover, background-position: center; width: 100vw', class: 'hero-image' %>
+<div class="hero-image">
+  <div class="header-large hidden-xs">
+    <h1>harry's page</h1>
+    <p>scroll down</p>
+  </div>
+  <div class="header-small hidden-sm hidden-md hidden-lg">
+    <h1 class="small-title-top">harry's</h1>
+    <h1 class="small-title-bottom">page</h1>
+  </div>
+</div>
+
+<%= render 'pages/welcome' %>
+
+<%#= image_tag "pokhara", style: 'height: 100vh; background-size: cover, background-position: center; width: 100vw', class: 'hero-image' %>
