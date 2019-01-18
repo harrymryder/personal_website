@@ -1,6 +1,17 @@
+p {
+  line-height: 24px;
+}
+h1 {
+  color: #454851;
+}
+body {
+  min-width: 300px;
+  // _width: expression( document.body.clientWidth > 330 ? "330px" : "auto" );
+}
+
 .hero-image {
   background: image-url('pokhara.jpeg');
-  color: white;
+  color: #454851;
   height: 100vh;
   background-position: center;
   /* if you have a 70px navbar => height: calc(100vh - 70px); */
@@ -8,29 +19,57 @@
   overflow: hidden;
 }
 
+.header-arrow {
+  font-size: 32px;
+  color: $body-color;
+  &:hover {
+    color: $orange;
+    cursor: pointer;
+  }
+}
+
 .header-large {
   min-width: 350px;
-  max-width: 650px;
+  max-width: 500px;
+  margin-top: 160px;
+  margin-left: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   h1 {
-    font-size: 104px;
-    text-align: center;
+    font-size: 80px;
   }
   p {
-    text-align: center;
+    font-size: 24px;
   }
 }
 
 .header-small {
   margin-left: 40px;
-  width: 300px;
-  .small-title-top {
+  min-width: 300px;
+  max-width: 300px;
+  margin-top: 160px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  h1 {
     font-size: 80px;
     margin-bottom: 0;
-    // text-align: center;
   }
-  .small-title-bottom {
+  h2 {
     margin-top: 0;
     font-size: 80px;
-    // text-align: center;
   }
+}
+
+.header-bottom {
+  margin-top: 24px;
+}
+
+.whitespace {
+  height: 200px;
+  width: 100vw;
+  background-color: #FAFAFA;
 }

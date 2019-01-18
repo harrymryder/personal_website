@@ -8,16 +8,29 @@
 .large-content-page-left {
   width: 100vw;
   height: 100vh;
+  position: relative;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 20px;
+  h1 {
+    font-size: 56px;
+  }
+  p {
+    padding-top: 40px;
+  }
 }
 
 .large-content-page-content {
-  margin-top: 40%;
-  margin-left: 24px;
-  margin-right: 24px;
+  margin-top: 160px;
 }
 
-.large-content-page-text {
-  margin-top: 40px;
+// .large-content-page-text {
+
+// }
+
+.brown-text {
+  color: #6D6466;
 }
 
 .large-content-page-right {
@@ -25,14 +38,47 @@
   height: 100vh;
 }
 
-// Different page cover images //
+.website-link {
+  color: $orange;
+  transition: color 0.3s ease;
+  &:hover {
+    color: $orange;
+  }
+}
+
+// Different page cover images  and box colors //
 
 .large-environment-image {
   background: image-url('fitz-roy.jpeg');
 }
+.large-environment-box {
+  background-color: black;
+}
+.small-environment-box {
+  background-color: #FFE9B3;
+}
+
 .large-coding-image {
   background: image-url('coding.jpeg');
 }
+.large-coding-box {
+  background-color: #B5ADAD;
+}
+.small-coding-box {
+  background-color: #E3A483;
+}
+
+.large-welcome-image {
+  background: image-url('me-boat.jpeg');
+}
+.large-welcome-box {
+  background-color: #ECEBEB;
+}
+.small-welcome-box {
+  background-color: #9EABDA;
+}
+
+////////////////////////////////////////////////
 
 .large-content-page-image {
   height: 100vh;
@@ -43,7 +89,6 @@
 }
 
 .large-content-page-box-large {
-  background-color: black;
   position: absolute;
   width: calc(50% + 80px);
   left: -80px;
@@ -52,10 +97,41 @@
 }
 
 .large-content-page-box-small {
-  background-color: $orange;
   position: absolute;
   width: 50%;
   right: 0;
   bottom: 0;
   height: 20%;
 }
+
+.large-content-page-left-side-box {
+  position: absolute;
+  width: 10%;
+  height: 35%;
+  right: 0;
+  bottom: 0;
+}
+
+// ARROWS //
+
+.up-arrow, .down-arrow {
+  text-align: center;
+  font-size: 32px;
+  color: $headers-color;
+  &:hover {
+    color: $orange;
+    cursor: pointer;
+  }
+}
+.up-arrow {
+  position: absolute;
+  top: 24px;
+  left: 50%;
+}
+.down-arrow {
+  position: absolute;
+  bottom: 24px;
+  left: 50%;
+}
+
+////////////////
