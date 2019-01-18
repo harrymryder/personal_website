@@ -12,6 +12,9 @@ class PagesController < ApplicationController
     # end
   end
 
+  def page
+  end
+
   private
 
   # def message_params

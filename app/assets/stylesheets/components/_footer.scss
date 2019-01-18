@@ -1,31 +1,43 @@
 .footer {
   width: 100vw;
-  padding: 50px;
-  height: 150px;
-  background-color: #021b23;
+  height: 200px;
+  background-color: #454851;
   color: white;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  flex-direction: column;
   align-items: center;
 }
 
-.fab, .fas {
+.footer-top {
+  font-size: 12px;
+  text-align: center;
+  margin: 16px;
+}
+
+.footer-bottom {
+  margin-top: 16px;
+}
+
+.fa-envelope-square,
+.fa-linkedin,
+.fa-twitter-square {
   color: white;
   font-size: 32px;
   margin: 0px 24px;
+  transition: color 0.3s ease;
   &:hover {
-    color: $light-blue;
+    color: #F5F749;
   }
 }
 
-.footer-right {
-  a {
-    width: 16px;
+.fa-heart {
+  color: $orange;
+  font-size: 16px;
+  margin: 0 !important;
+  &:hover {
+    color: $orange;
   }
 }
 
-.footer-left {
-  h6 {
-    max-width: 120px;
-  }
-}
+

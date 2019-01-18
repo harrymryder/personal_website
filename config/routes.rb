@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  root to: 'pages#home'
+  root to: 'pages#page'
 
   resources :messages, only: [:new, :create]
   # get 'contact-me', to: 'messages#new', as: 'new_message'
