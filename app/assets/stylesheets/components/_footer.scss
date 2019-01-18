@@ -25,7 +25,13 @@
 }
 
 .footer-left {
-  h6 {
+  p {
     max-width: 120px;
+    font-size: 16px;
   }
+}
+
+.fa-heart {
+  color: $orange;
+  font-size: 16px;
 }
