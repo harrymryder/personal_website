@@ -10,7 +10,52 @@
   height: 100vh;
 }
 
+.large-content-page-content {
+  margin-top: 40%;
+  margin-left: 24px;
+  margin-right: 24px;
+}
+
+.large-content-page-text {
+  margin-top: 40px;
+}
+
 .large-content-page-right {
   width: 100vw;
   height: 100vh;
+}
+
+// Different page cover images //
+
+.large-environment-image {
+  background: image-url('fitz-roy.jpeg');
+}
+.large-coding-image {
+  background: image-url('coding.jpeg');
+}
+
+.large-content-page-image {
+  height: 100vh;
+  background-position: center;
+  background-size: cover !important;
+  overflow: hidden;
+  position: relative;
+}
+
+.large-content-page-box-large {
+  background-color: black;
+  position: absolute;
+  width: calc(50% + 80px);
+  left: -80px;
+  bottom: 0;
+  height: 35%;
+}
+
+.large-content-page-box-small {
+  background-color: $orange;
+  position: absolute;
+  width: 50%;
+  right: 0;
+  bottom: 0;
+  height: 20%;
 }
