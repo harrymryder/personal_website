@@ -15,21 +15,21 @@
   padding-right: 20px;
   h1 {
     font-size: 56px;
-    padding-bottom: 48px;
+    padding-bottom: 16px;
   }
 }
 
 .large-content-page-content {
   margin-top: 160px;
+  padding: 24px;
 }
 
-.brown-text {
-  color: #6D6466;
-  padding-right: 24px;
+.large-content-page-text {
+  color: $brown;
 }
 
 .large-content-page-right {
-  width: 100vw;
+  width: 45vw;
   height: 100vh;
 }
 
@@ -46,12 +46,14 @@
 .small-content-page-container {
   p {
     font-size: 14px;
-    padding: 14px;
-    margin-bottom: 20px
   }
   h1 {
     margin-bottom: 20px
   }
+}
+.small-content-page-text {
+  margin-bottom: 40px;
+  color: $brown;
 }
 
 
@@ -132,38 +134,3 @@
   right: 0;
   bottom: 0;
 }
-
-// ARROWS //
-
-// .up-arrow, .down-arrow {
-//   text-align: center;
-//   font-size: 32px;
-//   &:hover {
-//     color: $orange;
-//     cursor: pointer;
-//   }
-// }
-// .up-arrow {
-//   color: $headers-color;
-//   position: absolute;
-//   top: 24px;
-//   left: 50%;
-// }
-// .down-arrow {
-//   color: #57737A;
-//   position: absolute;
-//   bottom: 24px;
-//   left: 50%;
-// }
-
-.small-up-arrow, .small-down-arrow {
-  text-align: center;
-  font-size: 32px;
-  color: $headers-color;
-  &:hover {
-    color: $orange;
-    cursor: pointer;
-  }
-}
-
-////////////////

@@ -17,6 +17,9 @@ gem 'uglifier'
 gem 'webpacker'
 
 gem 'jquery-rails'
+gem 'jquery-ui-rails'
+
+gem 'fullpage-rails'
 
 group :development do
   gem 'web-console', '>= 3.3.0'
