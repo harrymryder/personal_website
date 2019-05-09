@@ -6,6 +6,7 @@
     "animate.css": "^3.7.0",
     "aos": "^2.3.3",
     "bootstrap": "3",
+    "fullpage.js": "^3.0.5",
     "jquery": "^3.3.1"
   },
   "devDependencies": {

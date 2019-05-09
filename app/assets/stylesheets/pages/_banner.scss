@@ -1,0 +1,76 @@
+
+.header {
+  display: flex;
+}
+.header-left {
+  background-color: #454851;
+  width: 70vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-right: 40px;
+  padding-left: 40px;
+}
+.header-text {
+  color: white;
+  width: 80%;
+  margin: 0 auto;
+  h2 {
+    font-size: 72px;
+    margin-bottom: 16px;
+  }
+}
+.down-arrow {
+  color: $green;
+  font-size: 40px;
+  position: absolute;
+  bottom: 24px;
+  animation: bounce_7430 6.6s ease 5s infinite;
+  transform-origin: 50% 50%;
+  &:hover {
+    cursor: pointer;
+    color: $orange;
+  }
+}
+
+// --- Right --- //
+
+.header-right {
+  background-color: #57737A;
+  width: 30vw;
+  height: 100vh;
+  position: relative;
+}
+.header-headshot {
+ background: image-url('prayer-flags-bw.jpeg');
+ height: 60%;
+ width: 100%;
+ background-size: cover !important;
+ position: absolute;
+ top: 20%;
+ filter: grayscale(100%);
+}
+
+
+/////--------- SMALL SCREEN ---------/////////
+
+.small-header {
+  background-color: #454851;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.small-header-content {
+  color: white;
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+  h2 {
+    font-size: 56px;
+    margin-bottom: 16px;
+    margin-top: 0;
+  }
+}
+
