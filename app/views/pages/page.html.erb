@@ -11,28 +11,30 @@
   </div>
 </div>
 
-<div class="large-screen-display hidden-xs">
-  <div class="whitespace"></div>
-  <div class="section" id="welcome">
-    <%= render 'pages/welcome' %>
+<div id="fullpage">
+  <div class="large-screen-display hidden-xs">
+    <div class="whitespace"></div>
+    <div class="section" id="welcome">
+      <%= render 'pages/welcome' %>
+    </div>
+    <div class="whitespace"></div>
+    <div class="section" id="coding">
+      <%= render 'pages/coding' %>
+    </div>
+    <div class="whitespace"></div>
+    <div class="section" id="sierraleone">
+      <%= render 'pages/sierraleone' %>
+    </div>
+    <div class="whitespace"></div>
+    <div class="section" id="environment">
+      <%= render 'pages/environment' %>
+    </div>
+    <div class="whitespace"></div>
+    <div class="section" id="contact">
+      <%= render 'pages/contact' %>
+    </div>
+    <%= render 'shared/footer' %>
   </div>
-  <div class="whitespace"></div>
-  <div class="section" id="coding">
-    <%= render 'pages/coding' %>
-  </div>
-  <div class="whitespace"></div>
-  <div class="section" id="sierraleone">
-    <%= render 'pages/sierraleone' %>
-  </div>
-  <div class="whitespace"></div>
-  <div class="section" id="environment">
-    <%= render 'pages/environment' %>
-  </div>
-  <div class="whitespace"></div>
-  <div class="section" id="contact">
-    <%= render 'pages/contact' %>
-  </div>
-  <%= render 'shared/footer' %>
 </div>
 
 <div class="small-screen-display hidden-sm hidden-md hidden-lg">
@@ -48,7 +50,7 @@
   <%= render 'shared/footer' %>
 </div>
 
-<%= javascript_pack_tag 'scroll' %>
+<%#= javascript_pack_tag 'scroll' %>
 <%#= javascript_pack_tag 'sectionscroll' %>
 
 
