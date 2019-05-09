@@ -18,6 +18,20 @@
   }
 }
 
+.up-arrow {
+  color: $headers-color;
+  font-size: 40px;
+  position: absolute;
+  top: 24px;
+  left: 56px;
+  animation: bounce_7430 6.6s ease 5s infinite;
+  transform-origin: 50% 50%;
+  &:hover {
+    cursor: pointer;
+    color: $orange;
+  }
+}
+
 // XS Screen //
 
 .small-contact-page {

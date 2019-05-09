@@ -25,6 +25,7 @@
 
 .brown-text {
   color: #6D6466;
+  padding-right: 24px;
 }
 
 .large-content-page-right {
@@ -33,7 +34,7 @@
 }
 
 .website-link {
-  color: $orange;
+  color: $green;
   transition: color 0.3s ease;
   &:hover {
     color: $orange;
