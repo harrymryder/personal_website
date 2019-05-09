@@ -40,15 +40,16 @@
   background-color: #57737A;
   width: 30vw;
   height: 100vh;
-  position: relative;
 }
 .header-headshot {
  background: image-url('prayer-flags-bw.jpeg');
- height: 60%;
+ height: 50vh;
+ background-position: center;
  width: 100%;
  background-size: cover !important;
- position: absolute;
- top: 20%;
+ position: relative;
+ top: 25%;
+ right: 25vw;
  filter: grayscale(100%);
 }
 
