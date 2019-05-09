@@ -15,9 +15,7 @@
   padding-right: 20px;
   h1 {
     font-size: 56px;
-  }
-  p {
-    padding-top: 40px;
+    padding-bottom: 48px;
   }
 }
 
@@ -25,12 +23,9 @@
   margin-top: 160px;
 }
 
-// .large-content-page-text {
-
-// }
-
 .brown-text {
   color: #6D6466;
+  padding-right: 24px;
 }
 
 .large-content-page-right {
@@ -39,12 +34,28 @@
 }
 
 .website-link {
-  color: $orange;
+  color: $green;
   transition: color 0.3s ease;
   &:hover {
     color: $orange;
   }
 }
+
+//------- XS Screens ---------//
+
+.small-content-page-container {
+  p {
+    font-size: 14px;
+    padding: 14px;
+    margin-bottom: 20px
+  }
+  h1 {
+    margin-bottom: 20px
+  }
+}
+
+
+//---------------------------//
 
 // Different page cover images  and box colors //
 
@@ -76,6 +87,16 @@
 }
 .small-welcome-box {
   background-color: #9EABDA;
+}
+
+.large-sierra-image {
+  background: image-url('beach.jpeg');
+}
+.large-sierra-box {
+  background-color: #E0E0E0;
+}
+.small-sierra-box {
+  background-color: #FFA4A4;
 }
 
 ////////////////////////////////////////////////
@@ -114,7 +135,28 @@
 
 // ARROWS //
 
-.up-arrow, .down-arrow {
+// .up-arrow, .down-arrow {
+//   text-align: center;
+//   font-size: 32px;
+//   &:hover {
+//     color: $orange;
+//     cursor: pointer;
+//   }
+// }
+// .up-arrow {
+//   color: $headers-color;
+//   position: absolute;
+//   top: 24px;
+//   left: 50%;
+// }
+// .down-arrow {
+//   color: #57737A;
+//   position: absolute;
+//   bottom: 24px;
+//   left: 50%;
+// }
+
+.small-up-arrow, .small-down-arrow {
   text-align: center;
   font-size: 32px;
   color: $headers-color;
@@ -122,16 +164,6 @@
     color: $orange;
     cursor: pointer;
   }
-}
-.up-arrow {
-  position: absolute;
-  top: 24px;
-  left: 50%;
-}
-.down-arrow {
-  position: absolute;
-  bottom: 24px;
-  left: 50%;
 }
 
 ////////////////

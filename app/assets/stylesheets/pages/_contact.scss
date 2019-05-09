@@ -14,13 +14,93 @@
 .large-contact-page-content {
   h2 {
     font-size: 56px;
+    padding-bottom: 40px;
   }
 }
+
+.up-arrow {
+  color: $headers-color;
+  font-size: 40px;
+  position: absolute;
+  top: 24px;
+  left: 56px;
+  animation: bounce_7430 6.6s ease 5s infinite;
+  transform-origin: 50% 50%;
+  &:hover {
+    cursor: pointer;
+    color: $orange;
+  }
+}
+
+// XS Screen //
+
+.small-contact-page {
+  background-color: #57737A;
+  color: white;
+  padding-bottom: 80px;
+  padding-top: 64px;
+  height: 100vh;
+}
+.small-contact-form {
+  margin: 0 auto;
+}
+
+// ----------//
 
 // Form //
 
 .contact-me-form {
   width: 350px;
+  outline: none;
+  .transparent-input {
+    background-color: transparent;
+    // color: #ccc;
+    color: #F5F749;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    padding: 16px;
+    margin-bottom: 16px;
+    font-size: 16px;
+    font-weight: lighter;
+    outline: none !important;
+    resize: none;
+    box-shadow: none;
+    font-family: $headers-font;
+  }
+  textarea {
+    height: 120px;
+    outline: none;
+  }
+  input:-webkit-autofill {
+    font-family: $headers-font;
+    -webkit-box-shadow: 0 0 0 100px #57737A inset;
+    -webkit-text-fill-color: #F5F749;
+  }
+  input[type=text]:focus {
+    outline: none;      /* Remove default outline and use border or box-shadow */
+    // box-shadow: 0 0 0 2px orange; /* Full freedom. (works also with border-radius) */
+    border-bottom: 1px solid #F5F749;
+  }
+  input[type=email]:focus {
+    outline: none;      /* Remove default outline and use border or box-shadow */
+    // box-shadow: 0 0 0 2px orange; /* Full freedom. (works also with border-radius) */
+    border-bottom: 1px solid #F5F749;
+  }
+  textarea[type=textarea]:focus {
+    outline: none;      /* Remove default outline and use border or box-shadow */
+    // box-shadow: 0 0 0 2px orange; /* Full freedom. (works also with border-radius) */
+    border-bottom: 1px solid #F5F749;
+  }
+  input::placeholder {
+    color: #ccc;
+  }
+  textarea::placeholder {
+    color: #ccc;
+  }
+}
+
+.small-contact-form {
   outline: none;
   .transparent-input {
     background-color: transparent;
