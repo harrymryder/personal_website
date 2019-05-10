@@ -5,15 +5,39 @@
   display: flex;
 }
 
-.large-content-page-left {
-  width: 100vw;
+// .large-content-page-left {
+//   width: 100vw;
+//   height: 100vh;
+//   position: relative;
+//   margin-right: auto;
+//   margin-left: auto;
+//   padding-left: 15px;
+//   padding-right: 20px;
+//   h1 {
+//     font-size: 56px;
+//     padding-bottom: 16px;
+//   }
+// }
+
+// .large-content-page-right {
+//   width: 45vw;
+//   height: 100vh;
+// }
+
+.large-content-page-right {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 35vw;
   height: 100vh;
-  position: relative;
-  margin-right: auto;
-  margin-left: auto;
-  padding-left: 15px;
-  padding-right: 20px;
-  h1 {
+}
+.large-content-page-left {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 65vw;
+  height: 100vh;
+    h1 {
     font-size: 56px;
     padding-bottom: 16px;
   }
@@ -29,11 +53,6 @@
   padding-right: 40px;
 }
 
-.large-content-page-right {
-  width: 45vw;
-  height: 100vh;
-}
-
 .website-link {
   color: $green;
   transition: color 0.3s ease;
@@ -45,16 +64,15 @@
 //------- XS Screens ---------//
 
 .small-content-page-container {
-  p {
-    font-size: 14px;
-  }
   h1 {
+    font-size: 56px;
     margin-bottom: 20px
   }
 }
 .small-content-page-text {
   margin-bottom: 40px;
   color: $brown;
+  text-align: justify;
 }
 
 
@@ -104,20 +122,35 @@
 
 ////////////////////////////////////////////////
 
+///////////////////////////////////////////////
+
 .large-content-page-image {
   height: 100vh;
   background-position: center;
   background-size: cover !important;
   overflow: hidden;
-  position: relative;
+  width: 100%;
 }
 
 .large-content-page-box-large {
   position: absolute;
   width: calc(50% + 80px);
-  left: -80px;
   bottom: 0;
   height: 35%;
+  display: flex;
+  align-items: center;
+    h6 {
+    font-size: 24px;
+  }
+}
+
+.large-screen-box {
+  left: -80px;
+}
+
+.box-text {
+  position: absolute;
+  padding: 16px 40px;
 }
 
 .large-content-page-box-small {
@@ -126,12 +159,4 @@
   right: 0;
   bottom: 0;
   height: 20%;
-}
-
-.large-content-page-left-side-box {
-  position: absolute;
-  width: 10%;
-  height: 35%;
-  right: 0;
-  bottom: 0;
 }

@@ -6,7 +6,12 @@ h1 {
 }
 body {
   min-width: 300px;
+  overflow-x: hidden;
   // _width: expression( document.body.clientWidth > 330 ? "330px" : "auto" );
+}
+
+.large-screen-display {
+  overflow-x: hidden !important;
 }
 
 .whitespace {
@@ -18,4 +23,8 @@ body {
   height: 80px;
   width: 100vw;
   background-color: #FAFAFA;
+}
+
+.col-xs-12 {
+  padding: 0;
 }
