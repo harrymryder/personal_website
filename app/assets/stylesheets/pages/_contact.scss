@@ -5,12 +5,18 @@
   justify-content: center;
   align-items: center;
   width: 50vw;
+  height: calc(100vh - 200px);
+}
+
+.large-contact-page-container {
+  height: calc(100vh - 200px) !important;
 }
 
 .contact-form-page-left {
   background-color: #57737A;
   color: white;
   width: 50vw;
+  height: calc(100vh - 200px) !important;
 }
 
 .large-contact-page-content {

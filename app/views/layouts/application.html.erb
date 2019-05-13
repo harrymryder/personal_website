@@ -22,20 +22,24 @@
               licenseKey: '518F26B2-35144829-B51158D9-27B10D25',
               navigation: true,
               navigationPosition: 'left',
-              scrollOverflow: true,
-              scrollOverflowReset: true,
-              responsiveWidth: 767
+              // scrollOverflow: true,
+              // scrollOverflowReset: true,
+              responsiveWidth: 767,
+              anchors: ['home', 'welcome', 'coding', 'sierra-leone', 'sustainability', 'contact'],
+              loopBottom: true,
+              loopTop: true,
+              resize : false,
+              css3: true
             });
         });
       </script>
   </head>
   <body>
     <%= yield %>
-    <%#= render 'shared/footer' %>
+
     <%= javascript_include_tag 'application' %>
     <%= javascript_pack_tag 'application' %>
-    <%= javascript_pack_tag 'scroll' %>
-    <%#= javascript_pack_tag 'fullpage' %>
+
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>AOS.init();</script>
   </body>
